@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework - Day 3</title>
+
+    <script>
+        let name = "Tên bạn là gì?";
+        let lop = "C4EJS83";
+        console.log(name);
+        console.log(lop);
+
+        // Bài 1:  Khai báo và tạo ra Object
+
+        // car = {
+        //     type:"Fiat", 
+        //     model:"500", 
+        //     color:"white"
+        // };
+        // console.log(car.type);
+        // In ra "type"
+
+        //------------------------------------------------------------------------------------------------------------------
+
+        // Bài 2:  Khai báo và tạo ra Object
+
+        // person = {
+        //     firstName:"John", 
+        //     lastName:"Doe", 
+        //     age:50, 
+        //     eyeColor:"blue"
+        // };
+        // person.year = 50;
+        // console.log(`John is ${person.year} years old.`)
+
+        // In ra "John is 50 years old."
+
+        //------------------------------------------------------------------------------------------------------------------
+
+        // Bài 3:  Khai báo và tạo ra Object
+
+        // var person = {
+        //     firstName: "John",
+        //     lastName : "Doe",
+        //     id     : 5566,
+        //     fullName : function() {
+        //         return this.firstName + " " + this.lastName;
+        //     }
+        // };
+        // console.log(person.fullName());
+
+        // In ra fullName" 
+        // Gợi ý: sử dụng person.fullName(); để in value là function
+
+        //------------------------------------------------------------------------------------------------------------------
+
+        // Bài 4:
+
+        // Tạo ra một object chứa thông tin về cầu thủ Cristiano Ronaldo, bao gồm tên, năm sinh, quốc tịch. Link tham khảo: https://vi.wikipedia.org/wiki/Cristiano_Ronaldo
+
+        // Hỏi người dùng có muốn nhập thêm thông tin của cầu thủ không bằng cách nhập "Y" hoặc "N".
+
+        // Nếu người dùng nhập "Y", hỏi tiếp người dùng muốn thêm thông tin gì, giá trị cụ thể là gì? Sau đó thêm thông tin người dùng nhập vào object ban đầu.
+
+        // Nếu người dùng nhập "N", in ra màn hình câu "Good Bye!"
+        // let footBallPlayer = 
+        // {
+        //     name: 'Ronaldo',
+        //     birthOfYear: 1985,
+        //     country: 'Portugal',
+        // }
+        // let askQ = prompt('Do u want add more info of he -- Y/N');
+        // if(askQ.toLowerCase() == 'y'){
+        //     let n = prompt('what do u want cap?');
+        //     let Cont = prompt('What is content of Cap');
+        //     footBallPlayer[n] = Cont;
+        //     console.log(footBallPlayer); 
+        // }else if(askQ.toLowerCase() == 'n'){
+        //     console.log('goodbye!!');
+        // }
+
+
+        //------------------------------------------------------------------------------------------------------------------
+
+
+        // Bài 5 :
+
+        // Tạo ra một object chứa thông tin về cầu thủ Cristiano Ronaldo, bao gồm tên, năm sinh, quốc tịch.
+
+        // Cập nhật toàn bộ thông tin trên thành thông tin của cầu thủ Lionel Messi. Link tham khảo: https://vi.wikipedia.org/wiki/Lionel_Messi
+
+        //------------------------------------------------------------------------------------------------------------------
+        // let footBallPlayer = 
+        // {
+        //     name: 'Ronaldo',
+        //     birthOfYear: 1985,
+        //     country: 'Portugal',
+        // }
+        // footBallPlayer.name = 'Messi';
+        // footBallPlayer.birthOfYear = 1982;
+        // footBallPlayer.country = 'Argentina'
+        // console.log(footBallPlayer);
+
+
+        // Bài 6: 
+
+        // Tạo ra một object chứa thông tin về cầu thủ Cristiano Ronaldo, bao gồm tên, năm sinh, quốc tịch.
+
+        // Hỏi người dùng có muốn xóa thông tin nào của cầu thủ không bằng cách nhập "Y" hoặc "N".
+
+        // Nếu người dùng nhập "Y", hỏi người dùng thông tin muốn xóa, tiến hành xóa thông tin được chọn.
+
+        // Nếu người dùng nhập "N", in ra màn hình câu "Good Bye!"
+        // let footBallPlayer =
+        // {
+        //     name: 'Ronaldo',
+        //     birthOfYear: 1985,
+        //     country: 'Portugal',
+        // }
+        // let askQ = prompt('Do u want delete info of he -- Y/N');
+        // if (askQ.toLowerCase() == 'y') {
+        //     let count = 0;
+        //     let n = prompt('what do u want cap?');
+        //     for(let i in footBallPlayer){
+        //         if(n == i){
+        //             delete footBallPlayer[i]
+        //             break;
+        //         }
+        //     }
+        //     console.log(footBallPlayer);
+        // } else if (askQ.toLowerCase() == 'n') {
+        //     console.log('goodbye!!');
+        // }
+
+        //------------------------------------------------------------------------------------------------------------------
+
+
+        // Bài 7:
+
+        // Tạo ra Object
+
+        // let inventory = {
+        //     'gold' : 500,
+        //     'pouch' : ['flint', 'twine', 'gemstone'],
+        //     'backpack' : ['xylophone', 'dagger', 'bedroll', 'bread loaf']
+        // }
+        // console.log(`Add property`);
+        // inventory.pocket = ["seashell", "strange berry", "lint"]
+        // console.log(inventory);
+        // console.log('Delete dagger');
+        // inventory.backpack.splice(1,1);
+        // console.log(inventory);
+        // console.log('Sum of gold');
+        // console.log(inventory.gold + 50);
+        // console.log('Delete');
+        // delete inventory.pouch
+        // console.log(inventory)
+
+
+        // Thêm một property với tên "pocket", với value là một Array bao gồm các phần tử "seashell", "strange berry", và "lint".
+
+        // Xóa phần tử "dagger" trong Array của property backpack.
+
+        // Cộng thêm 50 vào giá trị của gold (Giá trị sau khi cộng là 550).
+
+        // Xóa toàn bộ thông tin liên quan đến pouch.
+
+        //------------------------------------------------------------------------------------------------------------------
+
+
+        // Bài 8 Cho hàm sau
+
+        // function myFunction(a, b) {
+        //     return a * b;
+        // }
+        // console.log(myFunction(4,3));
+        // In ra myFunction với giá trị 4, 3
+
+        //------------------------------------------------------------------------------------------------------------------
+
+        // Bài 9 Viết một function có chức năng tính tổng 2 số bất kỳ do người dùng nhập vào và in kết quả ra màn hình.
+        //  function myFunction(a, b) {
+        //     return a + b;
+        // }
+        // let a = Number(prompt('Nhap so a'));
+        // let b = Number(prompt("Nhap so b"));
+        // console.log(myFunction(a,b));
+        //------------------------------------------------------------------------------------------------------------------
+
+        // Bài 10 
+
+        // Viết function với tên remove_dollar_sign thực hiện xóa hết tất cả các dấu dollars ($) trong một string. 
+
+        // Function có một parameter (nhận vào một đoạn string bất kỳ). Return ra một string mới không chứa dấu dollars ($). 
+
+        // Gợi ý: bạn sử dụng hàm replace tenBien.replace("Microsoft", "W3Schools");
+
+        // Bạn có thể sử dụng đoạn string dưới đây để kiểm tra function của mình: "$80% percent of $life is to show $up".
+        // function remove_dollar_sign() {
+        //     Str = "$80% percent of $life is to show $up";
+        //     let arr = Str.split(`$`);
+        //     console.log(arr);
+        // }
+        // remove_dollar_sign();
+        //------------------------------------------------------------------------------------------------------------------
+
+        // Bài 12: Chay chương trinh sau
+
+        // (function () {
+        //     console.log ("Hello! I called myself");
+        // })();
+
+        //------------------------------------------------------------------------------------------------------------------
+
+        // Bài 13: Chay chương trinh sau
+
+        // function myFunction(a, b) {
+        //     return a * b;
+        // }
+        // let x = myFunction(4, 3) * 2;
+        // console.log(x);
+
+        //------------------------------------------------------------------------------------------------------------------
+
+        // Bài 14: so sánh sự khác nhau của 2 chương trình giới đây
+
+        // hello = function() {
+        //    return "Hello World!";
+        // }
+        // console.log(hello);
+        // hello = () => {
+        //     return "Hello World!";
+        // }        
+        // hai cách khai báo giống nhau của một function
+        // console.log(hello);
+
+        // Bài 15: Chay chương trình sau
+
+        // let hello;
+
+        // hello = (val) => "Hello " + val;
+
+        // console.log(hello("Universe!"));
+
+
+        //------------------------------------------------------------------------------------------------------------------
+
+
+        // Bài 16: Chay chương trình sau
+
+        // let hello;
+
+        // hello = (val) => "Hello " + val;
+
+        // console.log(hello("Universe!"));
+
+        //------------------------------------------------------------------------------------------------------------------
+
+        // Bài 17: Chay chương trình sau
+
+        // const x = (x, y) => { return x * y };
+        // console.log(x(5, 5));
+
+        //------------------------------------------------------------------------------------------------------------------
+
+        // Bài 18: Chay chương trình sau
+
+        // const x = (x, y) => { return x * y };
+        // console.log('Ket qua 5 * 5 = ' + x(5, 5));
+
+        //------------------------------------------------------------------------------------------------------------------
+
+        // Bài 19: Chay chương trình sau
+        // Hay
+        // function findMax() {
+        //     let i;
+        //     let max = 0;
+        //     for (i = 0; i < arguments.length; i++) {
+        //         // if (arguments[i] > max) {
+        //             max = arguments[i];
+        //         // }
+        //     }
+        //     return max;
+        // }
+        // console.log(findMax(4,6,9,10));
+        //tu nhan biet gia tri
+
+        //------------------------------------------------------------------------------------------------------------------
+
+        // Bài 20: Tương tự bài 19 bạn hãy tính tổng các tham số của hàm sau 
+        // function sumAll() {
+        //     let i;
+        //     let sum = 0;
+        //     for (let i = 0; i < arguments.length; i++) {
+        //         sum += arguments[i];
+        //     }
+        //     return sum;
+        // }
+        // console.log(sumAll(1,123,500,115,44,88));
+        //sumAll(1, 123, 500, 115, 44, 88)
+
+        //------------------------------------------------------------------------------------------------------------------
+
+        // Bài 21: Chay chương trình sau
+
+        // let myObject = {
+        //     firstName:"John",
+        //     lastName: "Doe",
+        //     fullName: function() {
+        //         return this.firstName + " " + this.lastName;
+        //     }
+        // }
+        // console.log(myObject.fullName());
+
+        //------------------------------------------------------------------------------------------------------------------
+
+        // Bài 22: Chay chương trình sau
+
+        // let person = {
+        //     fullName: function() {
+        //         return this.firstName + " " + this.lastName;
+        //     }
+        // }
+        // let person1 = {
+        //     firstName:"John",
+        //     lastName: "Doe"
+        // }
+        // let person2 = {
+        //     firstName:"Mary",
+        //     lastName: "Doe"
+        // }
+        // let x = person.fullName.call(person1); 
+        // console.log(x); 
+        // ham call()
+
+        //------------------------------------------------------------------------------------------------------------------
+
+        // Bài 23: Chay chương trình sau
+
+        // let person = {
+        //     fullName: function(city, country) {
+        //         return this.firstName + " " + this.lastName + "," + city + "," + country;
+        //     }
+        // }
+        // let person1 = {
+        //     firstName:"John",
+        //     lastName: "Doe"
+        // }
+        // let person2 = {
+        //     firstName:"Mary",
+        //     lastName: "Doe"
+        // }
+        // let x = person.fullName.call(person1, "Oslo", "Norway"); 
+        // console.log(x); 
+
+        //------------------------------------------------------------------------------------------------------------------
+
+        // Bài 24: Chay chương trình sau
+
+        // let counter = 0;
+
+        // function add() {
+        //     counter += 1;
+        // }
+
+        // add();
+        // add();
+        // add();
+
+        // console.log("The counter is: " + counter);
+
+        //------------------------------------------------------------------------------------------------------------------
+
+        // Bài 25: Chay chương trình sau
+
+        // function add() {
+        //     var counter = 0;
+        //     function plus() {counter += 1;}
+        //     plus();  
+        //     return counter; 
+        // }
+        // console.log(add());
+
+
+
+
+        //------------------------------------------------------------------------------------------------------------------
+
+        // Bài 26: Chay 3 chương trinh sau và rút ra nhận xét
+
+        // 1. Chương trình 1
+
+        // function conThoAnCo() {
+        // setTimeout(function() {
+        //     console.log('con thỏ ăn cỏ, uống nước');
+        // }, 3000);
+        // }
+
+        // // con thỏ chui vô hang
+        // function hotel() {
+        // console.log('chui vô hotel');
+        // }
+
+        // conThoAnCo();
+        // hotel();
+
+
+
+        // 2. Chương trình 2
+
+        // function conThoAnCo(callback007) {
+        //     setTimeout(function() {
+        //         console.log('con thỏ ăn cỏ, uống nước');
+        //         callback007(); // đây là lúc điệp viên báo cáo cho sếp !
+        //     }, 3000);
+        // }
+
+        // function hotel() {
+        //     console.log('chui vô hotel');
+        // }
+
+        // var callback = function() {
+        //     hotel();
+        // }
+        // conThoAnCo(callback);
+
+
+
+        // 3. Chương trình 3
+
+        // function conThoAnCo(callback007) {
+        //     setTimeout(function() {
+        //         console.log('con thỏ ăn cỏ, uống nước');
+        //         callback007(); // đây là lúc điệp viên báo cáo cho sếp !
+        //     }, 3000);
+        // }
+
+        // function hotel() {
+        //     console.log('chui vô hotel');
+        // }
+
+        // conThoAnCo(function() {
+        //     hotel();
+        // });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+</head>
+
+<body>
+
+</body>
+
+</html>
